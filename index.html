@@ -57,29 +57,46 @@
       </a>
     </div>
 
-    <div id="accordion">
-  <h3>Entree</h3>
-  <div>
-    <p>
-  Gratin chouchou
-    </p>
-    <p>Sarcive</p>
-  </div>
-  <h3>Plat</h3>
-  <div>
-    <p>
-    Rougail saucisse
-    </p>
-    <p>Poulet</p>
-  </div>
-  <h3>Dessert</h3>
-  <div>
-    <p>
-Tiraisu
-    </p>
-<p>Gateau chocolat</p>
-  </div>
-
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <p>Entree</p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <p>Samoussas</p>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <p>Plat</p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+<p>Rougail saucisse</p>        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <p>Dessert</p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          <p>Tiramisu</p>        </div>
+      </div>
+    </div>
   </div>
   <div>
 <p>Date: <input type="text" id="datepicker"></p>
@@ -90,10 +107,7 @@ Tiraisu
   <script type="text/javascript" src="jquery-ui.js"></script>
   <script type="text/javascript">
 
-  $(function() {
-    $( "#accordion" ).accordion();
-
-  });
+  
 
   $(function() {
     $( "#datepicker" ).datepicker();
