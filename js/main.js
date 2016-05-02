@@ -1,55 +1,96 @@
 $(function() {
-    $( "#accordion" ).accordion();
+  $( "#accordion" ).accordion();
 
+});
+
+$(function() {
+  $( "#datepicker" ).datepicker();
+});
+
+$(function() {
+  $( "#mariage" ).click(function (){
+    $("#gateau1").attr('src','img/mariage1.jpg');
+    $("#gateau2").attr('src','img/mariage2.jpg');
+    $("#gateau3").attr('src','img/mariage3.jpg');
   });
+});
 
-  $(function() {
-    $( "#datepicker" ).datepicker();
+$(function() {
+  $( "#annif" ).click(function (){
+    $("#gateau1").attr('src','img/annif1.jpg');
+    $("#gateau2").attr('src','img/annif2.jpg');
+    $("#gateau3").attr('src','img/annif3.jpg');
   });
+});
 
-(function($,W,D)
-{
-    var JQUERY4U = {};
+$(function() {
+  $( "#bapteme" ).click(function (){
+    $("#gateau1").attr('src','img/bapteme1.jpg');
+    $("#gateau2").attr('src','img/bapteme2.jpg');
+    $("#gateau3").attr('src','img/bapteme3.jpg');
+  });
+});
 
-    JQUERY4U.UTIL =
-    {
-        setupFormValidation: function()
-        {
-            //form validation rules
-            $("#register-form").validate({
-                rules: {
-                    firstname: "required",
-                    lastname: "required",
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    password: {
-                        required: true,
-                        minlength: 5
-                    },
-                    agree: "required"
-                },
-                messages: {
-                    firstname: "Please enter your firstname",
-                    lastname: "Please enter your lastname",
-                    password: {
-                        required: "Please provide a password",
-                        minlength: "Your password must be at least 5 characters long"
-                    },
-                    email: "Please enter a valid email address",
-                    agree: "Please accept our policy"
-                },
-                submitHandler: function(form) {
-                    form.submit();
-                }
-            });
-        }
-    }
+$(function() {
+  $( "#entreprise" ).click(function (){
+    $("#gateau1").attr('src','img/entreprise1.jpg');
+    $("#gateau2").attr('src','img/entreprise2.jpg');
+    $("#gateau3").attr('src','img/entreprise3.jpg');
+  });
+});
 
-    //when the dom has loaded setup form validation rules
-    $(D).ready(function($) {
-        JQUERY4U.UTIL.setupFormValidation();
-    });
 
-})(jQuery, window, document);
+
+
+
+    $('#event').on('change',function() {
+    var eventTypeName = $("#event option:selected").val();
+
+    if (eventTypeName == "mariage") {
+      $('#choix-model').show();
+
+        $('#choix-model option').eq(0).text("piece montee");
+        $('#choix-model option').eq(1).text("charlotte");
+        $('#choix-model option').eq(2).text("nougatine");
+ }
+
+ if (eventTypeName == "bapteme") {
+   $('#choix-model').show();
+
+    $('#choix-model option').eq(0).text("arche");
+    $('#choix-model option').eq(1).text("cherubin");
+    $('#choix-model option').eq(2).text("ange");
+}
+
+if (eventTypeName == "anniversaire") {
+  $('#choix-model').show();
+
+    $('#choix-model option').eq(0).text("pourquoi");
+    $('#choix-model option').eq(1).text("voila");
+    $('#choix-model option').eq(2).text("merci");
+}
+
+if (eventTypeName == "entreprise") {
+  $('#choix-model').show();
+
+    $('#choix-model option').eq(0).text("google");
+    $('#choix-model option').eq(1).text("atom");
+    $('#choix-model option').eq(2).text("edena");
+}
+
+
+if (eventTypeName == "special") {
+$('#choix-model').hide();
+    $('#choix-model option').eq(0).text("");
+    $('#choix-model option').eq(1).text("");
+    $('#choix-model option').eq(2).text("");
+}
+});
+
+$(function() {
+  $( "#choix-model" ).change(function (){
+    var name = this.options[this.selectedIndex].text;
+    $("#miniature").attr('src','img/'+name+'.jpg');
+  alert(name);
+  });
+});

@@ -3,3 +3,11 @@
     width: 70%;
     margin: auto;
 }
+
+.submit{
+  font-weight: bold;
+  background-color: #ab273c;
+  color: white;
+  height: 70px;
+  border-radius: 5px;
+}
