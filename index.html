@@ -10,113 +10,148 @@
 </head>
 
 <body>
-
-
-    <div id="Carousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#Carousel" data-slide-to="1"></li>
-            <li data-target="#Carousel" data-slide-to="2"></li>
-            <li data-target="#Carousel" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="img/entree3.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img/plat.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img/dessert.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img/entree2.jpg" alt="">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">PatisseWeb<p></p></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Accueil</a></li>
+                            <li><a href="#">A propos</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="accordion">
+                    <h3>Mariage</h3>
+                    <div>
+                        <p>
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        </p>
+                    </div>
+                    <h3>Communion</h3>
+                    <div>
+                        <p>
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <h3>Bapteme</h3>
+                    <div>
+                        <p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                        </p>
+                        <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                        </ul>
+                    </div>
+                    <h3>Anniversaire</h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                        </p>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="carouselEntrees" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselEntrees" data-slide-to="0"></li>
+                        <li data-target="#carouselEntrees" data-slide-to="1"></li>
+                        <li data-target="#carouselEntrees" data-slide-to="2"></li>
+                        <li data-target="#carouselEntrees" data-slide-to="3"></li>
+                    </ol>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#Carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#Carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/entree1.jpg" alt="Chania">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/plat1.jpg" alt="Chania">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/dessert1.jpg" alt="Flower">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#carouselEntrees" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselEntrees" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form action="" method="post" id="register-form" novalidate="novalidate">
+
+                    <h2>Reservation</h2>
+
+                    <div id="form-content">
+                        <fieldset>
+
+                            <div class="fieldgroup">
+                                <label for="firstname">Nom</label>
+                                <input type="text" name="firstname" />
+                            </div>
+
+                            <div class="fieldgroup">
+                                <label for="lastname">Prénom</label>
+                                <input type="text" name="lastname" />
+                            </div>
+
+                            <div class="fieldgroup">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" />
+                            </div>
+                            
+                            <div class="fieldgroup">
+                                <label for="daptepicker">Date</label>
+                                <input type="text" id="datepicker">
+                            </div>
+                            
+                            <div class="fieldgroup">
+                                <label for="model">Model</label>
+                                <input type="text" name="model" />
+                            </div>
+                            
+                            <div class="fieldgroup">
+                                <label for="quantity">Nombre de parts</label>
+                                <input type="text" name="quantity" />
+                            </div>
+                            
+                            <div class="fieldgroup">
+                                <input type="submit" value="Reserver" class="submit" />
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
-
-
-    <div>
-        <p>Date:
-            <input type="text" id="datepicker">
-        </p>
-    </div>
-
-
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingOne">
-        <h4 class="panel-title">
-          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <p>Entree</p>
-          </a>
-        </h4>
-      </div>
-      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
-          <p>Samoussas</p>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingTwo">
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-      <p>Plat</p>
-          </a>
-        </h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-        <div class="panel-body">
-<p>Rougail saucisse</p>        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingThree">
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <p>Dessert</p>
-          </a>
-        </h4>
-      </div>
-      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-        <div class="panel-body">
-          <p>Tiramisu</p>        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-<p>Date: <input type="text" id="datepicker"></p>
-</div>
-
-<script src="jquery.js"></script>
-<script src="bootstrap.min.js"></script>
-  <script type="text/javascript" src="jquery-ui.js"></script>
-  <script type="text/javascript">
-
-
-
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
-
-
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
