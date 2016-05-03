@@ -11,3 +11,17 @@
   height: 70px;
   border-radius: 5px;
 }
+
+#formular{
+    margin: 15px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    border-color: #e7e7e7;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+.fieldgroup{
+    padding: 5px;
+}

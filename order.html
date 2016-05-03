@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">PatisseWeb<p></p></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="about.html">A propos</a></li>
+                            <li class="active"><a href="order.html">Commander</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row"><!--Fin formulaire-->
+            <div class="col-md-12 ">
+                <h1 id="order" class="text-center">Commander</h1>
+            </div>
+            <div id="formular" class="row">
+                <div class="col-md-4">
+                    <div id="form-content">
+                        <form class="cmxform" action="" method="get" id="register-form" novalidate="novalidate">
+                            <fieldset>
+                                <div class="fieldgroup row">
+                                    <label class="col-md-6" for="firstname">Nom</label>
+                                    <input class="col-md-6" type="text" name="firstname" minlength="2" required/>
+                                </div>
+
+                                <div class="fieldgroup row">
+                                    <label class="col-md-6" for="lastname">Prénom</label>
+                                    <input class="col-md-6" type="text" name="lastname" minlength="2" required/>
+                                </div>
+
+                                <div class="fieldgroup row">
+                                    <label class="col-md-6" for="email">Email</label>
+                                    <input class="col-md-6" type="email" name="email" required/>
+                                </div>
+
+                                <div class="fieldgroup row">
+                                    <label class="col-md-6" for="event">Evenement</label>
+                                    <select class="col-md-6" type="text" name="event" id="event" />
+                                    <option value="mariage">Mariage</option>
+                                    <option value="bapteme">Baptême</option>
+                                    <option value="anniversaire">Anniversaire</option>
+                                    <option value="entreprise">Entreprise</option>
+                                    <option value="special">Spécial</option>
+                                    </select>
+                                </div>
+                                <div class="fieldgroup row">
+                                    <label class="col-md-6" for="model">Modele</label>
+                                    <select class="col-md-6" name="choix-model" id="choix-model">
+                                        <option value="gateau1" id="choix1">Gateau 1</option>
+                                        <option value="gateau2" id="choix2">Gateau 2</option>
+                                        <option value="gateau3" id="choix3">Gateau 3</option>
+                                    </select>
+                                </div>
+
+                                <div class="fieldgroup row">
+                                    <label class="col-md-6" for="quantity">Nombre de parts</label>
+                                    <input class="col-md-6" type="number" name="quantity" required/>
+                                </div>
+
+                                <div class="fieldgroup row">
+                                    <label class="col-md-6" for="daptepicker">Date</label>
+                                    <input class="col-md-6" type="text" id="datepicker" required>
+                                </div>
+
+                                <div class="fieldgroup row">
+                                    <label class="col-md-6" for="comments">Commentaires</label>
+                                    <textarea class="col-md-12" type="text" id="comments"></textarea>
+                                </div>
+
+                                <div class="row text-center">
+                                    <div class="col-md-12">
+                                        <div class="fieldgroup">
+                                            <input type="submit" value="Commander" class="submit" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/mariage1.jpg" alt="miniature" id="miniature" class="img-responsive" />
+                </div>
+            </div>
+
+        </div><!--Fin formulaire-->
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>
